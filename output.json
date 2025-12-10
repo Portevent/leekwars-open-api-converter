@@ -1,0 +1,4788 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Simple API overview",
+    "version": "2.0.0"
+  },
+  "paths": {
+    "ai/bin": {
+      "delete": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": []
+      }
+    },
+    "ai/change-folder/ai_id/folder_id": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/delete/ai_id": {
+      "delete": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/destroy/ai_id": {
+      "delete": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/get/ai_id": {
+      "get": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "381310"
+          }
+        ]
+      }
+    },
+    "ai/get-farmer-ais": {
+      "get": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": []
+      }
+    },
+    "ai/new-name/folder_id/version/name": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/rename/ai_id/new_name": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "new_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/restore/ai_id": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/save/ai_id/code": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/strict/ai_id/strict": {
+      "put": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "strict",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/sync/ais": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ais",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "object"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/test-scenario/scenario_id/ai_id": {
+      "post": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai/version/ai_id/version": {
+      "put": {
+        "tags": [
+          "ai"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai-folder/change-folder/folder_id/dest_folder_id": {
+      "post": {
+        "tags": [
+          "ai-folder"
+        ],
+        "parameters": [
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "dest_folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai-folder/delete/folder_id": {
+      "delete": {
+        "tags": [
+          "ai-folder"
+        ],
+        "parameters": [
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai-folder/new-name/folder_id/name": {
+      "post": {
+        "tags": [
+          "ai-folder"
+        ],
+        "parameters": [
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ai-folder/rename/folder_id/new_name": {
+      "post": {
+        "tags": [
+          "ai-folder"
+        ],
+        "parameters": [
+          {
+            "name": "folder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "new_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "article/all": {
+      "get": {
+        "tags": [
+          "article"
+        ],
+        "parameters": []
+      }
+    },
+    "changelog/get/language": {
+      "get": {
+        "tags": [
+          "changelog"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "changelog/get-last/language": {
+      "get": {
+        "tags": [
+          "changelog"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "chip/get-all": {
+      "get": {
+        "tags": [
+          "chip"
+        ],
+        "parameters": []
+      }
+    },
+    "complexity/get-all": {
+      "get": {
+        "tags": [
+          "complexity"
+        ],
+        "parameters": []
+      }
+    },
+    "constant/get-all": {
+      "get": {
+        "tags": [
+          "constant"
+        ],
+        "parameters": []
+      }
+    },
+    "country/get-all": {
+      "get": {
+        "tags": [
+          "country"
+        ],
+        "parameters": []
+      }
+    },
+    "encyclopedia/end-edition/page_id": {
+      "post": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "page_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "encyclopedia/get/language/code": {
+      "get": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "encyclopedia/get-all-locale/locale": {
+      "get": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "locale",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "it"
+          }
+        ]
+      }
+    },
+    "encyclopedia/get-last-pages/language": {
+      "get": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "encyclopedia/get-locked-pages": {
+      "get": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": []
+      }
+    },
+    "encyclopedia/search/language/query/page": {
+      "get": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "fr"
+          },
+          {
+            "name": "query",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "tourelle"
+          },
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "encyclopedia/set-language/page_id/language": {
+      "post": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "page_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "encyclopedia/start-edition/page_id": {
+      "post": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "page_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "encyclopedia/update/page_id/language/title/content/parent/reference": {
+      "put": {
+        "tags": [
+          "encyclopedia"
+        ],
+        "parameters": [
+          {
+            "name": "page_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "title",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "content",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "parent",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "reference",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/change-country/country_code": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "country_code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/contributors": {
+      "get": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": []
+      }
+    },
+    "farmer/get/farmer_id": {
+      "get": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "farmer/get-connected": {
+      "get": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": []
+      }
+    },
+    "farmer/get-from-token": {
+      "get": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": []
+      }
+    },
+    "farmer/login-token/login/password": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "password",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/register-tournament": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": []
+      }
+    },
+    "farmer/rename-crystals/name": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/rename-habs/name": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/rich-tooltip/id": {
+      "get": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-avatar/avatar": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "avatar",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "file"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-github/github": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "github",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-in-garden/in_garden": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "in_garden",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-language/language": {
+      "put": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-show-ai-lines/show_ai_lines": {
+      "put": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "show_ai_lines",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-title/icon/noun/gender/adjective": {
+      "put": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "icon",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "noun",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "gender",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "adjective",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/set-website/website": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": [
+          {
+            "name": "website",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "farmer/unregister-tournament": {
+      "post": {
+        "tags": [
+          "farmer"
+        ],
+        "parameters": []
+      }
+    },
+    "fight/comment/fight_id/comment": {
+      "post": {
+        "tags": [
+          "fight"
+        ],
+        "parameters": [
+          {
+            "name": "fight_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "comment",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "fight/fullmoon": {
+      "get": {
+        "tags": [
+          "fight"
+        ],
+        "parameters": []
+      }
+    },
+    "fight/get/fight_id": {
+      "get": {
+        "tags": [
+          "fight"
+        ],
+        "parameters": [
+          {
+            "name": "fight_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "40000000"
+          }
+        ]
+      }
+    },
+    "fight/get-logs/fight_id": {
+      "get": {
+        "tags": [
+          "fight"
+        ],
+        "parameters": [
+          {
+            "name": "fight_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "forum/mark-as-read": {
+      "post": {
+        "tags": [
+          "forum"
+        ],
+        "parameters": []
+      }
+    },
+    "forum/search2/query/farmer/category/page/order/admin/moderator/resolved": {
+      "get": {
+        "tags": [
+          "forum"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "farmer",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "admin",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          },
+          {
+            "name": "moderator",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          },
+          {
+            "name": "resolved",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "function/get-all": {
+      "get": {
+        "tags": [
+          "function"
+        ],
+        "parameters": []
+      }
+    },
+    "function/get-categories": {
+      "get": {
+        "tags": [
+          "function"
+        ],
+        "parameters": []
+      }
+    },
+    "garden/get-composition-opponents/composition_id": {
+      "get": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "24918"
+          }
+        ]
+      }
+    },
+    "garden/get-farmer-opponents": {
+      "get": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": []
+      }
+    },
+    "garden/get-leek-opponents/leek_id": {
+      "get": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "garden/start-farmer-challenge/target_id/seed/side": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "seed",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "side",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "garden/start-farmer-fight/target_id": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "garden/start-solo-challenge/leek_id/target_id/seed/side": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "seed",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "side",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "garden/start-solo-fight/leek_id/target_id": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "garden/start-team-challenge/composition_id/target_id/seed/side": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "seed",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "side",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "garden/start-team-fight/composition_id/target_id": {
+      "post": {
+        "tags": [
+          "garden"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "target_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/apply-equipment/group_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/create-member/group_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/equipment/group_id/level/characteristics/weapons/chips": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "level",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "characteristics",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "weapons",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "array"
+            },
+            "example": null
+          },
+          {
+            "name": "chips",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "array"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/fights/group_id": {
+      "get": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/get/group_id": {
+      "get": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/give-item/group_id/member_id/item_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/give-money-fights/group_id/member_id/amount/fights": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "amount",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "fights",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/give-money-fights-all/group_id/amount/fights": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "amount",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "fights",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/member-email/group_id/member_id/email": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/member-leek-name/group_id/member_id/leek_name": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "leek_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/member-name/group_id/member_id/name": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/member-password/group_id/member_id/password": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "password",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/remove-member/group_id/member_id": {
+      "delete": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/send-invite/group_id/member_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-bank/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-br/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-buy-fights/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-chat/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-equipment-blocked/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-new-leek/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-public-chat/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-tournaments/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/setting-xp-blocked/group_id/enabled": {
+      "put": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "enabled",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/start-battle-royale/group_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/start-solo-tournament/group_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "groupe/start-team-tournament/group_id": {
+      "post": {
+        "tags": [
+          "groupe"
+        ],
+        "parameters": [
+          {
+            "name": "group_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "hat/get-all": {
+      "get": {
+        "tags": [
+          "hat"
+        ],
+        "parameters": []
+      }
+    },
+    "history/get-farmer-history/farmer_id": {
+      "get": {
+        "tags": [
+          "history"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "history/get-leek-history/leek_id": {
+      "get": {
+        "tags": [
+          "history"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "history/get-team-history/team_id": {
+      "get": {
+        "tags": [
+          "history"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "item/get-all": {
+      "get": {
+        "tags": [
+          "item"
+        ],
+        "parameters": []
+      }
+    },
+    "item/retrieve/template/quantity": {
+      "post": {
+        "tags": [
+          "item"
+        ],
+        "parameters": [
+          {
+            "name": "template",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "quantity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "lang/get/file/lang": {
+      "get": {
+        "tags": [
+          "lang"
+        ],
+        "parameters": [
+          {
+            "name": "file",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/add-chip/leek_id/chip_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "chip_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/add-weapon/leek_id/weapon_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "weapon_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/create/name": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/delete-register/leek_id/key": {
+      "delete": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/get/leek_id": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "leek/get-count": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": []
+      }
+    },
+    "leek/get-next-price": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": []
+      }
+    },
+    "leek/get-private/leek_id": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/get-registers/leek_id": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "leek/register-auto-br/leek_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/register-tournament/leek_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/remove-ai/leek_id": {
+      "delete": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/remove-chip/chip_id": {
+      "delete": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "chip_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/remove-hat/leek_id": {
+      "delete": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/remove-weapon/weapon_id": {
+      "delete": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "weapon_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/rename-crystals/leek_id/new_name": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "new_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/rename-habs/leek_id/new_name": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "new_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/rich-tooltip/id": {
+      "get": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-ai/leek_id/ai_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-face/leek_id/face": {
+      "put": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "face",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-hat/leek_id/hat_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "hat_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-in-garden/leek_id/in_garden": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "in_garden",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-metal/leek_id/metal": {
+      "put": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "metal",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-register/leek_id/key/value": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "value",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-weapon/leek_id/weapon": {
+      "put": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "weapon",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/set-xp-blocked/leek_id/xp_blocked": {
+      "put": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "xp_blocked",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/spend-capital/leek_id/characteristics": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "characteristics",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "json"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/unregister-auto-br/leek_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/unregister-tournament/leek_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek/use-potion/leek_id/potion_id": {
+      "post": {
+        "tags": [
+          "leek"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "potion_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "leek-wars/version": {
+      "get": {
+        "tags": [
+          "leek-wars"
+        ],
+        "parameters": []
+      }
+    },
+    "market/buy-crystals/item_id": {
+      "post": {
+        "tags": [
+          "market"
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "market/buy-crystals-quantity/item_id/quantity": {
+      "post": {
+        "tags": [
+          "market"
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "quantity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "market/buy-habs/item_id": {
+      "post": {
+        "tags": [
+          "market"
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "market/buy-habs-quantity/item_id/quantity": {
+      "post": {
+        "tags": [
+          "market"
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "quantity",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "market/sell-habs/item_id": {
+      "post": {
+        "tags": [
+          "market"
+        ],
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/create-conversation/farmer_id/message": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "message",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/delete/messages/mute": {
+      "delete": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "messages",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "mute",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/find-conversation/target_farmer_id": {
+      "get": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "target_farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/get-conversations/offset/limit": {
+      "get": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/get-latest-conversations/count": {
+      "get": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "count",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/get-messages/conversation_id/count/offset": {
+      "get": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "count",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "offset",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/quit-conversation/conversation_id": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/read/conversation_id": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/send-message/conversation_id/message": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "message",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message/toggle-notifications/conversation_id": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message-reaction/add/reaction/message_id": {
+      "post": {
+        "tags": [
+          "message-reaction"
+        ],
+        "parameters": [
+          {
+            "name": "reaction",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "message_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "message-reaction/delete/message_id": {
+      "delete": {
+        "tags": [
+          "message-reaction"
+        ],
+        "parameters": [
+          {
+            "name": "message_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "notification/get-latest/count": {
+      "get": {
+        "tags": [
+          "notification"
+        ],
+        "parameters": [
+          {
+            "name": "count",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "notification/read/notification_id": {
+      "post": {
+        "tags": [
+          "notification"
+        ],
+        "parameters": [
+          {
+            "name": "notification_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "notification/read-all": {
+      "post": {
+        "tags": [
+          "notification"
+        ],
+        "parameters": []
+      }
+    },
+    "pomp/get-all": {
+      "get": {
+        "tags": [
+          "pomp"
+        ],
+        "parameters": []
+      }
+    },
+    "potion/get-all": {
+      "get": {
+        "tags": [
+          "potion"
+        ],
+        "parameters": []
+      }
+    },
+    "ranking/fun": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": []
+      }
+    },
+    "ranking/get/category/order/page/country": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "leek"
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "talent"
+          },
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          },
+          {
+            "name": "country",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "fr\n"
+          }
+        ]
+      }
+    },
+    "ranking/get-active/category/order/page/country": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "country",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-farmer-rank/farmer_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-farmer-rank-active/farmer_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-home-ranking": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": []
+      }
+    },
+    "ranking/get-leek-rank/leek_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-leek-rank-active/leek_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-team-rank/team_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/get-team-rank-active/team_id/order": {
+      "get": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "order",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "ranking/search/query/search_leeks/search_farmers/search_teams": {
+      "post": {
+        "tags": [
+          "ranking"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "search_leeks",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          },
+          {
+            "name": "search_farmers",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          },
+          {
+            "name": "search_teams",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "service/get-all": {
+      "get": {
+        "tags": [
+          "service"
+        ],
+        "parameters": []
+      }
+    },
+    "summon/get-templates": {
+      "get": {
+        "tags": [
+          "summon"
+        ],
+        "parameters": []
+      }
+    },
+    "talent/farmer": {
+      "get": {
+        "tags": [
+          "talent"
+        ],
+        "parameters": []
+      }
+    },
+    "talent/leek": {
+      "get": {
+        "tags": [
+          "talent"
+        ],
+        "parameters": []
+      }
+    },
+    "team/accept-candidacy/candidacy_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "candidacy_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/ban/farmer_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/cancel-candidacy": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": []
+      }
+    },
+    "team/cancel-candidacy-for-team/team_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/change-description/description": {
+      "put": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "description",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/change-member-grade/member_id/new_grade": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "member_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "new_grade",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/change-owner/new_owner/password": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "new_owner",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "password",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/composition-rich-tooltip/id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/create/team_name": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/create-composition/composition_name": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "composition_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/delete-composition/composition_id": {
+      "delete": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/dissolve": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": []
+      }
+    },
+    "team/get/team_id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "team/get-connected/team_id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/get-private/team_id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/move-leek/leek_id/to": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "leek_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "to",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/quit": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": []
+      }
+    },
+    "team/rankings/team_id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "1"
+          }
+        ]
+      }
+    },
+    "team/register-tournament/composition_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/reject-candidacy/candidacy_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "candidacy_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/rename-composition/composition_id/composition_name": {
+      "put": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "composition_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/rich-tooltip/id": {
+      "get": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/send-candidacy/team_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/set-emblem/team_id/emblem": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "team_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "emblem",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "file"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/set-logs-level/level": {
+      "put": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "level",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/set-opened/opened": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "opened",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "boolean"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/set-turret-ai/ai_id": {
+      "put": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "ai_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team/unregister-tournament/composition_id": {
+      "post": {
+        "tags": [
+          "team"
+        ],
+        "parameters": [
+          {
+            "name": "composition_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "team-composition/get-farmer-compositions": {
+      "get": {
+        "tags": [
+          "team-composition"
+        ],
+        "parameters": []
+      }
+    },
+    "test-leek/delete/id": {
+      "delete": {
+        "tags": [
+          "test-leek"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-leek/get-all": {
+      "get": {
+        "tags": [
+          "test-leek"
+        ],
+        "parameters": []
+      }
+    },
+    "test-leek/new/name": {
+      "post": {
+        "tags": [
+          "test-leek"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-leek/update/id/data": {
+      "post": {
+        "tags": [
+          "test-leek"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "data",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-map/delete/id": {
+      "delete": {
+        "tags": [
+          "test-map"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-map/get-all": {
+      "get": {
+        "tags": [
+          "test-map"
+        ],
+        "parameters": []
+      }
+    },
+    "test-map/new/name": {
+      "post": {
+        "tags": [
+          "test-map"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-map/update/id/data": {
+      "post": {
+        "tags": [
+          "test-map"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "data",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-scenario/add-leek/scenario_id/leek/team/ai": {
+      "post": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "leek",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "team",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "ai",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-scenario/delete/id": {
+      "delete": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-scenario/delete-leek/scenario_id/leek": {
+      "delete": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "leek",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-scenario/get-all": {
+      "get": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": []
+      }
+    },
+    "test-scenario/new/name": {
+      "post": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "test-scenario/update/id/data": {
+      "post": {
+        "tags": [
+          "test-scenario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "data",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "tournament/comment/tournament_id/comment": {
+      "post": {
+        "tags": [
+          "tournament"
+        ],
+        "parameters": [
+          {
+            "name": "tournament_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "comment",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "tournament/generate/tournament_id": {
+      "post": {
+        "tags": [
+          "tournament"
+        ],
+        "parameters": [
+          {
+            "name": "tournament_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "tournament/get/tournament_id": {
+      "get": {
+        "tags": [
+          "tournament"
+        ],
+        "parameters": [
+          {
+            "name": "tournament_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": "80000"
+          }
+        ]
+      }
+    },
+    "trophy/get-all": {
+      "get": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": []
+      }
+    },
+    "trophy/get-categories": {
+      "get": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": []
+      }
+    },
+    "trophy/get-farmer-trophies/farmer_id/lang": {
+      "get": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": [
+          {
+            "name": "farmer_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          },
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "trophy/get-trophy-words": {
+      "get": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": []
+      }
+    },
+    "trophy/my-trophies/lang": {
+      "get": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "trophy/retrieve-all-rewards": {
+      "post": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": []
+      }
+    },
+    "trophy/retrieve-reward/trophy_id": {
+      "post": {
+        "tags": [
+          "trophy"
+        ],
+        "parameters": [
+          {
+            "name": "trophy_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "trophy-template/get/code/locale": {
+      "get": {
+        "tags": [
+          "trophy-template"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          },
+          {
+            "name": "locale",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": null
+          }
+        ]
+      }
+    },
+    "weapon/get-all": {
+      "get": {
+        "tags": [
+          "weapon"
+        ],
+        "parameters": []
+      }
+    },
+    "weapon/get-templates": {
+      "get": {
+        "tags": [
+          "weapon"
+        ],
+        "parameters": []
+      }
+    }
+  }
+}
