@@ -1,6 +1,7 @@
 # leekwars-open-api-converter
 Convert Leekwars api documentation into OpenAPI specifications.
-- Leekwars api documentation can be fetched at https://leekwars.com/api/service/get-all, and a local version can be found at [input.json](./input.json) (fetched 10th of December 2025)
+- Leekwars api documentation can be viewed on https://leekwars.com/help/api, and the json specification can be fetched at https://leekwars.com/api/service/get-all
+- This repository contains a copy at [input.json](./input.json) (fetched 10th of December 2025)
 - OpenAPI convertion can be found at [output.json](./output.json)
 
 ## How to run it 
